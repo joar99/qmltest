@@ -1,0 +1,62 @@
+# --- CMake build files ---
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+/cmake_install.cmake
+/Makefile
+/install_manifest.txt
+
+# --- QtCreator / CMake User-specific files ---
+*.user
+*.user.*
+*.pro.user
+*.qbs.user
+*.creator.user*
+
+# --- Compiled Object Files ---
+*.o
+*.obj
+*.so
+*.a
+*.lib
+*.dll
+*.exe
+*.moc
+*.qrc.depends
+
+# --- Auto-generated MOC/UIC/RCC files ---
+moc_*
+ui_*
+qrc_*
+
+# --- macOS specific ---
+.DS_Store
+
+# --- Other build folders ---
+/bin/
+/lib/
+
+# --- Logs and temporary files ---
+*.log
+*.tmp
+
+# --- Clang / Linting ---
+.clangd/
+compile_commands.json
+
+# --- QML cache ---
+.qmlcache/
+
+# --- VSCode files (if applicable) ---
+.vscode/
+
+# --- QtCreator settings (optional, if not shared) ---
+*.autosave
+*.creator
+*.creator.user
+*.creator.user.*
+
+# --- Optional CMake presets (if personal) ---
+CMakePresets.json
+CMakeUserPresets.json
+
