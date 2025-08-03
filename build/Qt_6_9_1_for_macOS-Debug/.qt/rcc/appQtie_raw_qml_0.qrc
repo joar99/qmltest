@@ -1,8 +1,0 @@
-<RCC>
-  <qresource prefix="/qt/qml/Qtie/">
-    <file alias="Main.qml">/Users/jonassellamiarnesen/Documents/QML/Qtie/Main.qml</file>
-    <file alias="ControlView.qml">/Users/jonassellamiarnesen/Documents/QML/Qtie/ControlView.qml</file>
-    <file alias="SecondNavView.qml">/Users/jonassellamiarnesen/Documents/QML/Qtie/SecondNavView.qml</file>
-  </qresource>
-</RCC>
-

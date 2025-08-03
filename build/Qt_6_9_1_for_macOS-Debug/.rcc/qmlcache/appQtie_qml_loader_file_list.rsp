@@ -1,7 +1,0 @@
---resource
-/Users/jonassellamiarnesen/Documents/QML/Qtie/build/Qt_6_9_1_for_macOS-Debug/.qt/rcc/qmake_Qtie.qrc
---resource
-/Users/jonassellamiarnesen/Documents/QML/Qtie/build/Qt_6_9_1_for_macOS-Debug/.qt/rcc/appQtie_raw_qml_0.qrc
-/qt/qml/Qtie/Main.qml
-/qt/qml/Qtie/ControlView.qml
-/qt/qml/Qtie/SecondNavView.qml
