@@ -8,13 +8,21 @@
 class AppCoordinator : public QObject
 {
     Q_OBJECT
+
+    Q_PROPERTY(QString currentScreen READ currentScreen NOTIFY currentScreenDidChange)
 public:
     explicit AppCoordinator(QObject* parent = nullptr);
 
     void setupApplication(QQmlApplicationEngine* engine);
 
+    QString currentScreen() const { return m_currentScreen; }
+
 public slots:
     void navigateToSecondScreen();
+    void navigateBack();
+
+signals:
+    void currentScreenDidChange();
 
 private:
     void createViewModels();
@@ -23,6 +31,8 @@ private:
 
     ControlViewModel* m_controlViewModel;
     QQmlApplicationEngine* m_engine;
+
+    QString m_currentScreen;
 };
 
 #endif // APPCOORDINATOR_H

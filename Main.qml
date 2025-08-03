@@ -9,6 +9,19 @@ Window {
 
     ControlView {
         viewModel: controlViewModel
+        visible: appCoordinator.currentScreen === "ControlView"
         anchors.fill: parent
+    }
+
+    SecondNavView {
+        visible: appCoordinator.currentScreen === "SecondNavView"
+        anchors.fill: parent
+
+        Button {
+            text: "Go Back"
+            anchors.bottom: parent.bottom
+            anchors.horizontalCenter: parent.horizontalCenter
+            onClicked: appCoordinator.navigateBack()
+        }
     }
 }

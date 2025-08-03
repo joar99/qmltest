@@ -3,7 +3,7 @@
 #include <QDebug>
 
 AppCoordinator::AppCoordinator(QObject* parent)
-    : QObject(parent), m_controlViewModel(nullptr), m_engine(nullptr)
+    : QObject(parent), m_controlViewModel(nullptr), m_engine(nullptr), m_currentScreen("ControlView")
 {
     createViewModels();
 }
@@ -34,5 +34,12 @@ void AppCoordinator::exposeToQml(QQmlApplicationEngine* engine)
 
 void AppCoordinator::navigateToSecondScreen()
 {
-    qDebug() << "AppCoordinator: Navigating to second screen";
+    m_currentScreen = "SecondNavView";
+    emit currentScreenDidChange();
+}
+
+void AppCoordinator::navigateBack()
+{
+    m_currentScreen = "ControlView";
+    emit currentScreenDidChange();
 }
