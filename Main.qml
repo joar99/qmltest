@@ -9,13 +9,33 @@ Window {
 
     ControlView {
         viewModel: controlViewModel
-        visible: appCoordinator.currentScreen === "ControlView"
         anchors.fill: parent
+
+        opacity: appCoordinator.currentScreen === "ControlView" ? 1.0 : 0.0
+        scale: appCoordinator.currentScreen === "ControlView" ? 1.0 : 0.95
+        visible: opacity > 0
+
+        Behavior on opacity {
+            NumberAnimation { duration: 250; easing.type: Easing.InOutQuad }
+        }
+        Behavior on scale {
+            NumberAnimation { duration: 250; easing.type: Easing.InOutQuad }
+        }
     }
 
     SecondNavView {
-        visible: appCoordinator.currentScreen === "SecondNavView"
         anchors.fill: parent
+
+        opacity: appCoordinator.currentScreen === "SecondNavView" ? 1.0 : 0.0
+        scale: appCoordinator.currentScreen === "SecondNavView" ? 1.0 : 0.95
+        visible: opacity > 0
+
+        Behavior on opacity {
+            NumberAnimation { duration: 250; easing.type: Easing.InOutQuad }
+        }
+        Behavior on scale {
+            NumberAnimation { duration: 250; easing.type: Easing.InOutQuad }
+        }
 
         Button {
             text: "Go Back"
