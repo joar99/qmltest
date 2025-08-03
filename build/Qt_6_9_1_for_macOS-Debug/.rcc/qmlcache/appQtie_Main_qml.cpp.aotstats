@@ -1,0 +1,28 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": false,
+                        "column": 20,
+                        "durationMicroseconds": 127,
+                        "errorMessage": "Cannot access value for name controlViewModel",
+                        "functionName": "viewModel",
+                        "line": 11
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 39,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 12
+                    }
+                ],
+                "filePath": "/Users/jonassellamiarnesen/Documents/QML/Qtie/Main.qml"
+            }
+        ],
+        "moduleId": "Qtie(appQtie)"
+    }
+]

@@ -1,0 +1,7 @@
+module Qtie
+typeinfo appQtie.qmltypes
+prefer :/qt/qml/Qtie/
+Main 1.0 Main.qml
+ControlView 1.0 ControlView.qml
+SecondNavView 1.0 SecondNavView.qml
+

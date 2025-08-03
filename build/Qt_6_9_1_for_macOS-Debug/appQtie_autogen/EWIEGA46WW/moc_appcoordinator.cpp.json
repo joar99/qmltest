@@ -1,0 +1,26 @@
+{
+    "classes": [
+        {
+            "className": "AppCoordinator",
+            "lineNumber": 8,
+            "object": true,
+            "qualifiedClassName": "AppCoordinator",
+            "slots": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "navigateToSecondScreen",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "appcoordinator.h",
+    "outputRevision": 69
+}

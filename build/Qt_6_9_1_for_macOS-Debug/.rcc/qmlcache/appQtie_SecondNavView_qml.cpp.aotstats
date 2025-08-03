@@ -1,0 +1,20 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 96,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 5
+                    }
+                ],
+                "filePath": "/Users/jonassellamiarnesen/Documents/QML/Qtie/SecondNavView.qml"
+            }
+        ],
+        "moduleId": "Qtie(appQtie)"
+    }
+]
